@@ -1,7 +1,7 @@
 <br><br><br>
 <div class="container2">
   <div>
-    <h3>List of Post Office Branch Names <br> by Pincode:</h3>
+    <h3 style="font-weight: 600;">List of Post Office Branch Names by Pincode:</h3>
     <label for="pincode">Enter Pincode: </label>
     <input type="text" id="pincode" [(ngModel)]="pincode_var" required maxlength="6" minlength="6" #pinControl="ngModel" pattern="[0-9]*"> <br>
     <span *ngIf="pinControl.invalid && pinControl.touched" style="color: red;">*please enter a 6 digit pincode</span>
@@ -13,7 +13,7 @@
   </div>
 
   <div>
-    <h3>List of Pincodes by Branch <br> Name:</h3>
+    <h3 style="font-weight:600;">List of Pincodes by Branch Name:</h3>
     <label for="branch">Enter Branch Name: </label>
     <input type="text" id="branch" [(ngModel)]="branch_var" required #branchControl="ngModel"> <br>
     <span *ngIf="branchControl.invalid && branchControl.touched" style="color: red;">*input is required</span>
