@@ -12,8 +12,10 @@ import {  Root } from '../postoffice';
 export class ResultdataComponent implements OnInit {
   // data:Root[]=[];
   // data: Root[]= new Array<Root>();
+
   data:any;
   errorFlag!:string;
+  displayedColumns: any[]=['index','Name','BranchType','PostOffice'];
 
   constructor(private pincodeservice:PincodeService, private router:Router) { }
 
@@ -26,7 +28,7 @@ export class ResultdataComponent implements OnInit {
         console.log(response);
         this.data=response;
         console.log(this.data);
-        if(this.data['0'].Status=='Error'){
+        if(this.data['0'].Status=='404' || this.data['0'].Status=='Error'){
           this.errorFlag="Error"
           console.log("Pincode doesn't exist")
           this.router.navigateByUrl('/errorpage');

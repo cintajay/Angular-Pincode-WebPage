@@ -1,14 +1,14 @@
 h1{
   margin-top: 0;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 30px;
-  margin-left: -161px;
-  margin-right: -161px;
-  padding-left: 160px;
-  font-size: 60px;
+  font-size: 80px;
+  padding-left: 200px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 800;
 }
 .headingstyle{
   color: rgb(0,0,0);
-    background-color: rgb(39 120 120);
+  background-color: rgb(109 172 217);
   /* white-space: pre; */
 }

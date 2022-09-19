@@ -1,3 +1,7 @@
 .leftmargin{
   margin-left: 100px;
 }
+.container2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
